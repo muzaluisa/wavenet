@@ -209,6 +209,7 @@ def make_targets_soft(func):
     return wrapper
 
 
+# main function
 @ex.capture()
 def build_model(fragment_length, nb_filters, nb_output_bins, dilation_depth, nb_stacks, use_skip_connections,
                 learn_all_outputs, _log, desired_sample_rate, use_bias, res_l2, final_l2):
